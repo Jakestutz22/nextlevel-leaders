@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Level Leaders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2933;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: #4f46e5;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .about-box {
+      background: #f1f5f9;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .price-card {
+      border: 3px solid #e0e7ff;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #4f46e5;
+      margin: 15px 0;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+      grid-column: span 2;
+    }
+
+    .full {
+      grid-column: span 2;
+    }
+
+    button {
+      grid-column: span 2;
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      color: white;
+      padding: 16px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      textarea, button, .full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Next Level Leaders</h1>
+  <p>Building confident, disciplined leaders through sports, academics, and real conversations.</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Who We Are</h2>
+    <p>Next Level Leaders is led by three high school athletes with one shared goal: helping kids become confident, accountable, and driven young leaders.</p>
+
+    <div class="about-grid">
+      <div class="about-box">🏆 Sports teach discipline, teamwork, and resilience</div>
+      <div class="about-box">📚 Academics build focus, habits, and responsibility</div>
+      <div class="about-box">🗣️ Real conversations create confidence and character</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>What We Do</h2>
+    <p>Every <strong>Next Level Leaders</strong> session is intentionally designed to develop the whole child — physically, mentally, and emotionally. Each 1-hour session is split into three engaging parts:</p>
+
+    <div class="about-grid">
+      <div class="about-box">
+        <h3>🏃 Sports / Movement (20 min)</h3>
+        <p>Backyard-style sports, park workouts, and movement-based challenges.</p>
+        <p><strong>Focus:</strong> agility, coordination, effort, work ethic, teamwork, and showing up.</p>
+      </div>
+
+      <div class="about-box">
+        <h3>📘 Academics / Focus (15–20 min)</h3>
+        <p>We help kids sharpen their focus and build strong habits.</p>
+        <p><strong>Includes:</strong> homework help, organization tips, study habits, and goal setting.</p>
+        <p>We always ask questions like: <em>“What’s one thing you want to improve this week?”</em></p>
+      </div>
+
+      <div class="about-box">
+        <h3>💬 Life + Confidence Talk (20 min)</h3>
+        <p>This is what makes us different.</p>
+        <p>Real, natural conversations about becoming the best version of yourself.</p>
+        <p><strong>Topics include:</strong> confidence vs. ego, handling pressure, being kind but strong, dealing with losing, being a good teammate, social confidence, and giving your best effort even when it’s hard.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>1-on-1 Session</h3>
+        <div class="price">$45</div>
+        <p>One hour of focused mentorship and development.</p>
+      </div>
+      <div class="price-card">
+        <h3>Small Group Session</h3>
+        <div class="price">$35</div>
+        <p>Per child, per hour. Great for teams or friend groups.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Book a 1-Hour Session</h2>
+    <p>To schedule a session, please call or text one of the numbers below. All appointment requests are handled directly by our team to ensure the best fit for your child or group.</p>
+
+    <p><strong>Booking Phone Numbers:</strong></p>
+    <ul>
+      <li><a href="tel:9144177286">📞 914-417-7286 - Jake Stutz</a></li>
+      <li><a href="tel:9143140987">📞 914-314-0987 - Alex Bond</a></li>
+      <li><a href="tel:9145226673">📞 914-522-6673 - Max Seiler</a></li>
+    </ul>
+
+    <p>You can also fill out the form below to help us prepare. We will follow up by phone.</p>
+
+    <form>
+      <div>
+        <label>Parent / Guardian Name</label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label>Email Address</label>
+        <input type="email" required />
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input type="tel" required />
+      </div>
+      <div>
+        <label>Session Type</label>
+        <select required>
+          <option value="">Select one</option>
+          <option>1-on-1</option>
+          <option>Small Group</option>
+        </select>
+      </div>
+      <div>
+        <label>Child / Group Name</label>
+        <input type="text" required />
+      </div>
+      <div>
+        <label>Age Range</label>
+        <input type="text" placeholder="e.g. 8–10" />
+      </div>
+      <div>
+        <label>Preferred Date</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label>Preferred Time</label>
+        <input type="time" />
+      </div>
+      <label class="full">Tell us about your child or group</label>
+      <textarea placeholder="Goals, challenges, confidence, leadership, mindset"></textarea>
+      <button type="submit">Send Request 🚀</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Next Level Leaders · Built to develop the next generation
+</footer>
+
+</body>
+</html>
